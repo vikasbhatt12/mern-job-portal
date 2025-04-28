@@ -25,7 +25,7 @@ const JobContext = ({ children }) => {
 
   useEffect(() => {
     handleJobFetch(
-      `https://mern-job-portal-8zsv.vercel.app//api/v1/jobs?page=1`
+      `https://mern-job-portal-orcin.vercel.app/api/v1/jobs?page=1`
     );
   }, []);
   const passing = {

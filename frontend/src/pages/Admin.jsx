@@ -9,7 +9,7 @@ const Admin = () => {
     queryKey: ["admin_info"],
     queryFn: () =>
       getAllHandler(
-        `https://mern-job-portal-8zsv.vercel.app//api/v1/admin/info`
+        `https://mern-job-portal-orcin.vercel.app/api/v1/admin/info`
       ),
   });
 

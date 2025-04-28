@@ -32,7 +32,7 @@ const Stats = () => {
     queryKey: ["stats"],
     queryFn: () =>
       getAllHandler(
-        `https://mern-job-portal-8zsv.vercel.app//api/v1/admin/stats`
+        `https://mern-job-portal-orcin.vercel.app/api/v1/admin/stats`
       ),
   });
 

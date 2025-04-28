@@ -38,7 +38,7 @@ const Register = () => {
       // posting
       try {
         const response = await axios.post(
-          "https://mern-job-portal-8zsv.vercel.app//api/v1/auth/register",
+          "https://mern-job-portal-orcin.vercel.app/api/v1/auth/register",
           user
         );
 
