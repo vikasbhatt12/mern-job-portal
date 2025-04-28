@@ -28,7 +28,7 @@ const Job = () => {
     queryKey: ["job"],
     queryFn: () =>
       getSingleHandler(
-        `https://mern-job-portal-y0iu.onrender.com//api/v1/jobs/${id}`
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/jobs/${id}`
       ),
   });
 

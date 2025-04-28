@@ -30,7 +30,7 @@ const Login = () => {
     // posting
     try {
       const response = await axios.post(
-        "https://mern-job-portal-orcin.vercel.app/api/v1/auth/login",
+        "https://mern-job-portal-y0iu.onrender.com/api/v1/auth/login",
         data,
         {
           withCredentials: true,

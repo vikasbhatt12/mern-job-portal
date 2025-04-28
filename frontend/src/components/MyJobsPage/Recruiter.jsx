@@ -19,7 +19,7 @@ const Recruiter = () => {
     queryKey: ["rec-jobs"],
     queryFn: async () => {
       const response = await axios.get(
-        `https://mern-job-portal-orcin.vercel.app/api/v1/application/recruiter-jobs`,
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/application/recruiter-jobs`,
         {
           withCredentials: true,
         }
@@ -52,7 +52,7 @@ const Recruiter = () => {
     const newStatus = { recruiterId, status: "accepted" };
     updateJobStatusMutation.mutate({
       body: newStatus,
-      url: `https://mern-job-portal-orcin.vercel.app/api/v1/application/${id}`,
+      url: `https://mern-job-portal-y0iu.onrender.com/api/v1/application/${id}`,
     });
   };
 
@@ -60,7 +60,7 @@ const Recruiter = () => {
     const newStatus = { recruiterId, status: "rejected" };
     updateJobStatusMutation.mutate({
       body: newStatus,
-      url: `https://mern-job-portal-orcin.vercel.app/api/v1/application/${id}`,
+      url: `https://mern-job-portal-y0iu.onrender.com/api/v1/application/${id}`,
     });
   };
 

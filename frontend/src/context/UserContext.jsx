@@ -12,7 +12,7 @@ const UserContext = ({ children }) => {
     setUserLoading(true);
     try {
       const response = await axios.get(
-        `https://mern-job-portal-orcin.vercel.app/api/v1/auth/me`,
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/auth/me`,
         {
           withCredentials: true,
         }

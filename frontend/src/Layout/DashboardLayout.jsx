@@ -16,7 +16,7 @@ const DashboardLayout = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        "https://mern-job-portal-orcin.vercel.app/api/v1/auth/logout",
+        "https://mern-job-portal-y0iu.onrender.com/api/v1/auth/logout",
         { withCredentials: true }
       );
       Swal.fire({

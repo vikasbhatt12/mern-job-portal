@@ -33,7 +33,7 @@ const JobCard = ({ job }) => {
     };
     try {
       const response = await postHandler({
-        url: "https://mern-job-portal-orcin.vercel.app/api/v1/application/apply",
+        url: "https://mern-job-portal-y0iu.onrender.com/api/v1/application/apply",
         body: appliedJob,
       });
       Swal.fire({

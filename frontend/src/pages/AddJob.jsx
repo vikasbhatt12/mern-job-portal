@@ -55,7 +55,7 @@ const AddJob = () => {
     // posting;
     try {
       const response = await axios.post(
-        "https://mern-job-portal-orcin.vercel.app/api/v1/jobs",
+        "https://mern-job-portal-y0iu.onrender.com/api/v1/jobs",
         newJob,
         {
           withCredentials: true,

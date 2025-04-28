@@ -14,7 +14,7 @@ const Applicant = () => {
     queryKey: ["my-jobs"],
     queryFn: async () => {
       const response = await axios.get(
-        `https://mern-job-portal-orcin.vercel.app/api/v1/application/applicant-jobs`,
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/application/applicant-jobs`,
         { withCredentials: true }
       );
       return response?.data?.result;

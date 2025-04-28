@@ -29,7 +29,7 @@ const EditProfile = () => {
   //     queryKey: ["profile"],
   //     queryFn: async () => {
   //         const response = await axios.get(
-  //             `https://mern-job-portal-orcin.vercel.app/api/v1/users/${id}`
+  //             `https://mern-job-portal-y0iu.onrender.com/api/v1/users/${id}`
   //         );
   //         return response.data;
   //     },
@@ -60,7 +60,7 @@ const EditProfile = () => {
       }
 
       const response = await axios.patch(
-        `https://mern-job-portal-orcin.vercel.app/api/v1/users`,
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/users`,
         updateUser,
         {
           withCredentials: true,

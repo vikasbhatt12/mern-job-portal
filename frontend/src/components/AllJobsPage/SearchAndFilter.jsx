@@ -16,7 +16,7 @@ const SearchAndFilter = () => {
 
   useEffect(() => {
     const baseUrl =
-      "https://mern-job-portal-orcin.vercel.app/api/v1/jobs?page=1&limit=5";
+      "https://mern-job-portal-y0iu.onrender.com/api/v1/jobs?page=1&limit=5";
     let url = baseUrl;
     const queryParams = {};
 

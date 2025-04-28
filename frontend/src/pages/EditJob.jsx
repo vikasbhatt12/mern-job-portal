@@ -35,7 +35,7 @@ const EditJob = () => {
     queryKey: ["updateJob"],
     queryFn: () =>
       getSingleHandler(
-        `https://mern-job-portal-orcin.vercel.app/api/v1/jobs/${id}`
+        `https://mern-job-portal-y0iu.onrender.com/api/v1/jobs/${id}`
       ),
   });
 
@@ -98,7 +98,7 @@ const EditJob = () => {
     // posting;
     updateJobMutation.mutate({
       body: updateJob,
-      url: `https://mern-job-portal-orcin.vercel.app/api/v1/jobs/${id}`,
+      url: `https://mern-job-portal-y0iu.onrender.com/api/v1/jobs/${id}`,
     });
   };
   // const onSubmit = (data) => {
