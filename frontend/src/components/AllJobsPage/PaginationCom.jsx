@@ -14,7 +14,9 @@ const PaginationCom = () => {
     // );
     // setItemOffset(newOffset);
     handleJobFetch(
-      `http://localhost:3000/api/v1/jobs?page=${e.selected + 1}&limit=5`
+      `https://mern-job-portal-8zsv.vercel.app//api/v1/jobs?page=${
+        e.selected + 1
+      }&limit=5`
     );
   };
 

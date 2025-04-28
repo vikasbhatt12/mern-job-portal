@@ -8,16 +8,16 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 // Middlewares
 app.use(express.json());
 app.use(
-    cors({
-        origin: ["http://localhost:5173"],
-        methods: ["GET,POST,DELETE,PUT,PATCH"],
-        credentials: true,
-    })
+  cors({
+    origin: ["https://mern-job-portal-orcin.vercel.app"],
+    methods: ["GET,POST,DELETE,PUT,PATCH"],
+    credentials: true,
+  })
 );
 
 // Custom Middlewares
 const {
-    authenticateUser,
+  authenticateUser,
 } = require("./Middleware/UserAuthenticationMiddleware");
 
 // Routers

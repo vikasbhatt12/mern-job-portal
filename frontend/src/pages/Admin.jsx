@@ -7,7 +7,10 @@ import LoadingComTwo from "../components/shared/LoadingComTwo";
 const Admin = () => {
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["admin_info"],
-    queryFn: () => getAllHandler(`http://localhost:3000/api/v1/admin/info`),
+    queryFn: () =>
+      getAllHandler(
+        `https://mern-job-portal-8zsv.vercel.app//api/v1/admin/info`
+      ),
   });
 
   if (isPending) {

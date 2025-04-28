@@ -26,7 +26,10 @@ const Job = () => {
     error,
   } = useQuery({
     queryKey: ["job"],
-    queryFn: () => getSingleHandler(`http://localhost:3000/api/v1/jobs/${id}`),
+    queryFn: () =>
+      getSingleHandler(
+        `https://mern-job-portal-8zsv.vercel.app//api/v1/jobs/${id}`
+      ),
   });
 
   const date = dayjs(job?.jobDeadline).format("MMM Do, YYYY");

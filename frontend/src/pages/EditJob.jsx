@@ -33,7 +33,10 @@ const EditJob = () => {
     error,
   } = useQuery({
     queryKey: ["updateJob"],
-    queryFn: () => getSingleHandler(`http://localhost:3000/api/v1/jobs/${id}`),
+    queryFn: () =>
+      getSingleHandler(
+        `https://mern-job-portal-8zsv.vercel.app//api/v1/jobs/${id}`
+      ),
   });
 
   const [deadline, setDeadline] = useState(new Date());
@@ -95,7 +98,7 @@ const EditJob = () => {
     // posting;
     updateJobMutation.mutate({
       body: updateJob,
-      url: `http://localhost:3000/api/v1/jobs/${id}`,
+      url: `https://mern-job-portal-8zsv.vercel.app//api/v1/jobs/${id}`,
     });
   };
   // const onSubmit = (data) => {

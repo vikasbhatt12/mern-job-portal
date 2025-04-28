@@ -30,7 +30,10 @@ const Stats = () => {
   const [isShowBarChart, setIsShowBarChart] = useState(false);
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["stats"],
-    queryFn: () => getAllHandler(`http://localhost:3000/api/v1/admin/stats`),
+    queryFn: () =>
+      getAllHandler(
+        `https://mern-job-portal-8zsv.vercel.app//api/v1/admin/stats`
+      ),
   });
 
   // Pi Chart Codes
